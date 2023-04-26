@@ -673,14 +673,14 @@ body {
 
 .account-button:not(.right-side-button) + .account-button:before {
   position: absolute;
-  right: 0px;
-  top: -2px;
-  background-color: #1b86f8;
+  right: -2px;
+  top: -3px;
+  background-color: #1355e4;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   content: "";
-  border: 2px solid #151728;
+  border: 2px solid #ffffff;
 }
 
 .account-profile {
@@ -916,3 +916,21 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+#dropdown {
+  cursor: pointer;
+}
+
+#dropdown::after {
+  content: "\00a0\00a0\00a0";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-top: 2px solid rgb(100,103,122);
+  border-right: 2px solid rgb(100,103,122);
+  transform: rotate(45deg);
+  margin-left: -3px;
+  margin-top: 5px;
+}
+
+
